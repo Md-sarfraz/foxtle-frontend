@@ -17,12 +17,14 @@ const Navbar = () => {
 
         {/* Center Logo */}
         <div className="absolute left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-0.5">
-          <img
-            src={foxtleLogo}
-            alt="Foxtle Logo"
-            className="h-7 w-7 object-contain" // smaller logo on mobile
-          />
-          <span className="text-white font-semibold text-[10px]">Foxtle</span>
+          <Link to="/" onClick={() => setIsOpen(false)} className="flex flex-col items-center">
+            <img
+              src={foxtleLogo}
+              alt="Foxtle Logo"
+              className="h-7 w-7 object-contain cursor-pointer"
+            />
+            <span className="text-white font-semibold text-[10px] cursor-pointer">Foxtle</span>
+          </Link>
         </div>
 
         {/* Right Button (smaller only on mobile) */}
@@ -35,8 +37,9 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu Dropdown */}
+
       {isOpen && (
-        <ul className="flex flex-col items-center gap-3 mt-3 text-gray-200 font-normal text-sm lg:hidden">
+        <ul className="absolute top-full left-0 w-full bg-white/10 backdrop-blur-md rounded-b-xl shadow-lg flex flex-col items-center gap-4 mt-2 py-4 text-gray-200 font-medium text-sm z-40">
           {[
             { name: "About Us", to: "/about" },
             { name: "Services", to: "/services" },
@@ -44,27 +47,28 @@ const Navbar = () => {
             { name: "Blogs", to: "/blogs" },
             { name: "Contact Us", to: "/contact" },
           ].map((item) => (
-            <li key={item.to} className="relative group">
+            <li key={item.to} className="relative w-full group">
               <Link
                 to={item.to}
-                className="transition-colors duration-300 group-hover:text-white"
+                className="block w-full text-center py-2 transition-colors duration-300 group-hover:text-white"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
               </Link>
-              <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute left-1/2 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-1/2 -translate-x-1/2"></span>
             </li>
           ))}
           <Link
             to="/features"
-            className="text-gray-200 hover:text-white transition relative group"
+            className="block w-full text-center py-2 text-gray-200 hover:text-white transition relative group"
             onClick={() => setIsOpen(false)}
           >
             View Features
-            <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute left-1/2 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-1/2 -translate-x-1/2"></span>
           </Link>
         </ul>
       )}
+
 
       {/* Desktop Navbar */}
       <div className="hidden lg:flex items-center justify-between">
@@ -91,12 +95,14 @@ const Navbar = () => {
 
         {/* Center Logo */}
         <div className="absolute left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-0.5">
-          <img
-            src={foxtleLogo}
-            alt="Foxtle Logo"
-            className="h-8 w-8 object-contain"
-          />
-          <span className="text-white font-semibold text-xs">Foxtle</span>
+          <Link to="/" className="flex flex-col items-center">
+            <img
+              src={foxtleLogo}
+              alt="Foxtle Logo"
+              className="h-8 w-8 object-contain cursor-pointer"
+            />
+            <span className="text-white font-semibold text-xs cursor-pointer">Foxtle</span>
+          </Link>
         </div>
 
         {/* Right Menu */}

@@ -443,24 +443,17 @@ export default function HomePage() {
 
       {/* Services Section */}
       <div className="flex flex-col items-center pt-24">
+        {/* Section Heading */}
         <div className="flex mb-4 items-center gap-3">
-          {/* Left dot */}
           <div className="w-[6px] h-[6px] rounded-full bg-[#A5B7D2]"></div>
-
-          {/* Services text */}
           <h2 className="text-xs font-semibold tracking-widest text-[#A5B7D2] uppercase">
             OUR SERVICES
           </h2>
-
-          {/* Right dot */}
           <div className="w-[6px] h-[6px] rounded-full bg-[#A5B7D2]"></div>
         </div>
 
-        {/* Heading Section */}
-        <div
-          className={`text-center mb-16 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-            }`}
-        >
+        {/* Title & Description */}
+        <div className="text-center mb-16" data-aos="fade-up">
           <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
             Gaze a look at Best{" "}
             <span className="text-orange-500">digital marketing services</span> in India
@@ -474,15 +467,13 @@ export default function HomePage() {
         {/* Services Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 place-items-center">
           {services.map((service, index) => {
-            const IconComponent = service.icon
+            const IconComponent = service.icon;
             return (
               <div
                 key={service.id}
-                className={`group relative bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-500 cursor-pointer border border-gray-100 hover:border-orange-200 w-[280px] ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
-                  }`}
-                style={{
-                  transitionDelay: `${index * 100}ms`,
-                }}
+                className="group relative bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-500 cursor-pointer border border-gray-100 hover:border-orange-200 w-[280px]"
+                data-aos="zoom-out"
+                data-aos-delay={index * 100} // stagger effect
               >
                 <div className="p-5 flex flex-col items-center text-center">
                   {/* Icon Circle */}
@@ -490,7 +481,7 @@ export default function HomePage() {
                     <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <IconComponent className="w-6 h-6 text-white" />
                     </div>
-                    {/* Animated ring */}
+                    {/* Animated Ring */}
                     <div className="absolute inset-0 w-12 h-12 border-2 border-orange-200 rounded-full opacity-0 group-hover:opacity-100 group-hover:scale-125 transition-all duration-500"></div>
                   </div>
 
@@ -510,13 +501,14 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                {/* Background gradient on hover */}
+                {/* Background Gradient on Hover */}
                 <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg -z-10"></div>
               </div>
-            )
+            );
           })}
         </div>
       </div>
+
 
 
 
@@ -825,7 +817,7 @@ export default function HomePage() {
             onMouseEnter={() => setIsAutoPlaying(false)}
             onMouseLeave={() => setIsAutoPlaying(true)}
           >
-            <div className="overflow-hidden rounded-2xl">
+            <div className="overflow-hidden  rounded-2xl">
               <div
                 className="flex transition-transform duration-700 ease-in-out"
                 style={{
