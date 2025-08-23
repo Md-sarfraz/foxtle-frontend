@@ -7,7 +7,13 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 w-[85%] max-w-5xl bg-white/10 backdrop-blur-md rounded-xl shadow-navbar px-6 py-5 z-50 lg:px-6 lg:py-5">
+    <nav className="fixed top-7 left-1/2 transform -translate-x-1/2 
+w-[85%] max-w-5xl 
+bg-white/5 backdrop-blur-md 
+border border-white/20 
+rounded-xl shadow-lg 
+px-6 py-5 z-50 lg:px-6 lg:py-5">
+
       {/* Mobile Navbar */}
       <div className="flex items-center justify-between lg:hidden">
         {/* Hamburger Button */}

@@ -9,6 +9,7 @@ import ourProductImg3 from "../assets/images/ourProduct-img3.png"
 import ContactSection from "@/components/contactSection";
 import bgImg1 from "../assets/images/bgImg1.png"
 import personImg1 from "../assets/images/personImg1.png"
+import TestimonialsSection from "@/components/customer reviews";
 
 
 const services = [
@@ -75,34 +76,34 @@ const AboutUs = () => {
         </div>
 
         {/* Bottom Section - Image + Content */}
-<div className="flex flex-col lg:flex-row items-center relative">
-  {/* Left side - Image */}
-{/* Left side - Image */}
-<div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
-  <img
-    src={aboutImg1}
-    alt="Professional developer with laptop"
-    className="w-full sm:w-3/4 md:w-2/3 lg:w-[600px] xl:w-[750px] h-auto object-contain"
-  />
-</div>
+        <div className="flex flex-col lg:flex-row items-center relative">
+          {/* Left side - Image */}
+          {/* Left side - Image */}
+          <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
+            <img
+              src={aboutImg1}
+              alt="Professional developer with laptop"
+              className="w-full sm:w-3/4 md:w-2/3 lg:w-[600px] xl:w-[750px] h-auto object-contain"
+            />
+          </div>
 
 
 
-  {/* Right side - Define us Content */}
-  <div className="w-full lg:w-2/3 mt-8 lg:mt-0 lg:px-28 xl:px-24 px-8">
-    <p className="text-sm font-semibold pb-4 text-gray-600">Define us!</p>
-    <h2 className="text-2xl sm:text-3xl lg:text-3xl font-bold text-gray-900 mb-4">
-      Welcome to Flown Developer - A Top Web Development Company in India
-    </h2>
-    <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-      100% Trusted and Registered Company in India with a professional website
-      that provides the best web development and web design services in India.
-      We are a company that offers multi-functional web portals, and we make
-      sure that a well-developed and attractive website can help our clients to
-      record ROI-driven results.
-    </p>
-  </div>
-</div>
+          {/* Right side - Define us Content */}
+          <div className="w-full lg:w-2/3 mt-8 lg:mt-0 lg:px-28 xl:px-24 px-8">
+            <p className="text-sm font-semibold pb-4 text-gray-600">Define us!</p>
+            <h2 className="text-2xl sm:text-3xl lg:text-3xl font-bold text-gray-900 mb-4">
+              Welcome to Flown Developer - A Top Web Development Company in India
+            </h2>
+            <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
+              100% Trusted and Registered Company in India with a professional website
+              that provides the best web development and web design services in India.
+              We are a company that offers multi-functional web portals, and we make
+              sure that a well-developed and attractive website can help our clients to
+              record ROI-driven results.
+            </p>
+          </div>
+        </div>
 
       </div>
 
@@ -233,9 +234,24 @@ const AboutUs = () => {
               />
 
             </div>
+
+                  {/* Bottom Waves */}
+      <div className="absolute -bottom-20 left-1/2 transform -translate-x-1/2 w-full sm:w-3/4 text-orange-500">
+        <svg viewBox="0 0 1200 80" className="w-full h-10 sm:h-14" preserveAspectRatio="none">
+          <path
+            d="M0,60 C300,90 900,10 1200,50 L1200,80 L0,80 Z"
+            fill="currentColor"
+            opacity="0.7"
+          />
+        </svg>
+      </div>
           </div>
         </div>
       </section>
+
+
+
+      <TestimonialsSection />
 
 
     </div>
