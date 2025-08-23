@@ -54,6 +54,7 @@ import customPlanImg from "../assets/images/customPlan-img.png"
 import baseImg1 from "../assets/images/baseImg1.png"
 import baseImg2 from "../assets/images/baseImg2.png"
 import contactImage from "../assets/images/contactImage.png"
+import FAQSection from "@/components/faqSection";
 
 
 
@@ -1164,6 +1165,10 @@ export default function HomePage() {
           </div>
         </div>
       </footer> */}
+
+     <div className="bg-white">
+       <FAQSection/>
+     </div>
     </div>
   )
 }
