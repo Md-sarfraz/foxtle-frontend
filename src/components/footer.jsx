@@ -3,7 +3,7 @@ import baidu from "../assets/images/baidu.png"
 import flickr from "../assets/images/flickr.png"
 import linkedin from "../assets/images/linkedin.png"
 import insta from "../assets/images/insta.png"
-import Pinterest from "../assets/images/Pinterest.png"
+import pinterest from "../assets/images/pinterest.png"
 import youtube from "../assets/images/youtube.png"
 import twitter from "../assets/images/twitter.png"
 import facebook from "../assets/images/fb.png"
@@ -16,7 +16,7 @@ export default function Footer() {
     { name: "Flickr", src: flickr, alt: "Flickr" },
     { name: "LinkedIn", src: linkedin, alt: "LinkedIn" },
     { name: "Insta", src: insta, alt: "Insta" },
-    { name: "Pinterest", src: Pinterest, alt: "Pinterest" },
+    { name: "Pinterest", src: pinterest, alt: "Pinterest" },
     { name: "YouTube", src: youtube, alt: "YouTube" },
     { name: "Twitter", src: twitter, alt: "Twitter" },
     { name: "Facebook", src: facebook, alt: "Facebook" },
