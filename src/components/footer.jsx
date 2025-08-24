@@ -92,20 +92,25 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Social Media Icons */}
-        <div className="mt-8 flex justify-center">
-<div className="flex gap-3 flex-wrap justify-center">
-            {socialIcons.map((icon, index) => (
-              <a key={index} href="#" className="hover:scale-110 transition-transform duration-200 flex-shrink-0">
-                <img
-                  src={icon.src}
-                  alt={icon.alt}
-                  className="w-7 h-7 sm:w-9 sm:h-9 md:w-10 md:h-10 rounded-full"
-                />
-              </a>
-            ))}
-          </div>
-        </div>
+{/* Social Media Icons */}
+<div className="mt-8 flex justify-center">
+  <div className="flex gap-4 flex-nowrap overflow-x-auto sm:overflow-visible scrollbar-hide">
+    {socialIcons.map((icon, index) => (
+      <a
+        key={index}
+        href="#"
+        className="hover:scale-110 transition-transform duration-200 flex-shrink-0"
+      >
+        <img
+          src={icon.src}
+          alt={icon.alt}
+          className="w-9 h-9 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full"
+        />
+      </a>
+    ))}
+  </div>
+</div>
+
 
         {/* Bottom Section */}
         <div className="border-t border-white/20 mt-8 pt-6 text-center">
