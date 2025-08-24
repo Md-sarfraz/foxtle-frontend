@@ -94,7 +94,7 @@ export default function Footer() {
 
         {/* Social Media Icons */}
         <div className="mt-8 flex justify-center">
-          <div className="flex gap-3 flex-nowrap overflow-x-auto sm:overflow-visible">
+<div className="flex gap-3 flex-wrap justify-center">
             {socialIcons.map((icon, index) => (
               <a key={index} href="#" className="hover:scale-110 transition-transform duration-200 flex-shrink-0">
                 <img
