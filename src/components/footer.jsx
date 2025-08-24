@@ -94,7 +94,7 @@ export default function Footer() {
 
 {/* Social Media Icons */}
 <div className="mt-8 flex justify-center">
-  <div className="flex gap-4 flex-nowrap overflow-x-auto sm:overflow-visible scrollbar-hide">
+  <div className="flex gap-3 flex-nowrap overflow-x-auto sm:overflow-visible scrollbar-hide">
     {socialIcons.map((icon, index) => (
       <a
         key={index}
@@ -104,7 +104,7 @@ export default function Footer() {
         <img
           src={icon.src}
           alt={icon.alt}
-          className="w-9 h-9 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full"
+          className="w-8 h-8 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-9 lg:h-9 rounded-full"
         />
       </a>
     ))}

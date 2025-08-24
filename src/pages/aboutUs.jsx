@@ -10,6 +10,7 @@ import ContactSection from "@/components/contactSection";
 import bgImg1 from "../assets/images/bgImg1.png"
 import personImg1 from "../assets/images/personImg1.png"
 import TestimonialsSection from "@/components/customer reviews";
+import FAQSection from "@/components/faqSection";
 
 
 const services = [
@@ -252,6 +253,9 @@ const AboutUs = () => {
 
 
       <TestimonialsSection />
+      <div>
+        <FAQSection/>
+      </div>
 
 
     </div>
