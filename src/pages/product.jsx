@@ -17,7 +17,7 @@ const Product = () => {
       /> */}
 
       {/* App Showcase Section */}
-      <section className="relative overflow-hidden w-screen  h-[100svh] md:h-screen">
+      <section className="relative overflow-hidden w-screen  h-[80svh] md:h-screen">
         <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
           {/* Gradient Background */}
           <div className="absolute inset-0 bg-gradient-to-br from-[#171C28] to-[#FF5200]"></div>
