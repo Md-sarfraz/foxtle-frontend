@@ -268,7 +268,7 @@ export default function HomePage() {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-[100vh] bg-background ">
       {/* Hero Section */}
       <section className="relative bg-sidebar min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background GIF */}
