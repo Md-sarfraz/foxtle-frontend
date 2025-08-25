@@ -39,20 +39,20 @@ const Product = () => {
             </h1>
 
             {/* Mobile Screen Image */}
-            <div
-              className="
-                absolute 
-                left-1/2 -translate-x-1/2 flex justify-center items-end
-                bottom-[-40px]   
-                md:bottom-0     
-              "
-            >
-              <img
-                src={mobileScreen}
-                alt="App Screenshot Left"
-                className="h-[180px] md:h-[250px] object-contain"
-              />
-            </div>
+<div
+  className="
+    absolute 
+    inset-x-0 bottom-0   /* full width cover karega aur base se chipka rahega */
+    flex justify-center   /* center horizontally karna hai to */
+  "
+>
+  <img
+    src={mobileScreen}
+    alt="App Screenshot"
+    className="h-[190px] w-auto md:h-[250px] object-contain"
+  />
+</div>
+
           </div>
         </div>
       </section>
