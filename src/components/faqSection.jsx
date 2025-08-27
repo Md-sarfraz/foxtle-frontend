@@ -51,25 +51,30 @@ export default function FAQSection() {
   }
 
   return (
-    <div className="max-w-5xl mx-auto p-6">
-      <h1 className="text-2xl font-medium text-center mb-8 text-gray-900">Frequently Asked Question</h1>
+    <div className="max-w-5xl mx-auto p-6 pb-16">
+      <h1 className="text-2xl font-medium text-center mb-8 text-gray-900">
+        Frequently Asked Question
+      </h1>
 
       <div className="space-y-2">
         {faqData.map((item) => (
           <div
             key={item.id}
             className={`border border-orange-200 rounded-lg overflow-hidden transition-all duration-300 ease-in-out ${
-              openItems.has(item.id) ? "bg-white shadow-md border-orange-300" : "bg-orange-50 hover:bg-orange-100"
+              openItems.has(item.id) ? "shadow-md border-orange-300" : ""
             }`}
+            style={{ backgroundColor: openItems.has(item.id) ? "white" : "#FFEADD" }}
           >
             <button
               onClick={() => toggleItem(item.id)}
               className={`w-full px-6 py-4 text-left flex items-center justify-between transition-all duration-300 ease-in-out ${
-                openItems.has(item.id) ? "bg-orange-400 text-white hover:bg-orange-500" : "hover:bg-orange-100"
+                openItems.has(item.id) ? "bg-orange-400 text-white hover:bg-orange-500" : ""
               }`}
             >
               <span
-                className={`font-medium transition-colors duration-300 ${openItems.has(item.id) ? "text-white" : "text-gray-900"}`}
+                className={`font-medium transition-colors duration-300 ${
+                  openItems.has(item.id) ? "text-white" : "text-gray-900"
+                }`}
               >
                 {item.question}
               </span>

@@ -5,6 +5,9 @@ import AboutUs from "./pages/aboutUs";
 import Service from "./pages/service";
 import Contact from "./pages/contact"
 import Product from "./pages/product";
+import DigitalMarketing from "./pages/digitalMarketing";
+import SocialMedia from "./pages/socialMedia";
+import WebDevelopment from "./pages/webDevlopment";
 import Blog from "./pages/blog"
 import Footer from "./components/footer";
 import { useEffect } from "react";
@@ -30,6 +33,9 @@ export default function App() {
             <Route path="/blogs" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/products" element={<Product />} />
+            <Route path="/services/digital-marketing" element={<DigitalMarketing />} />
+            <Route path="/services/social-media" element={<SocialMedia />} />
+            <Route path="/services/web-development" element={<WebDevelopment />} />
         </Routes>
         <Footer />
       </div>
