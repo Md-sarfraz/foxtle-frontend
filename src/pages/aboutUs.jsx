@@ -237,7 +237,7 @@ const AboutUs = () => {
             </div>
 
                   {/* Bottom Waves */}
-      <div className="absolute -bottom-20 left-1/2 transform -translate-x-1/2 w-full sm:w-3/4 text-orange-500">
+      {/* <div className="absolute -bottom-20 left-1/2 transform -translate-x-1/2 w-full sm:w-3/4 text-orange-500">
         <svg viewBox="0 0 1200 80" className="w-full h-10 sm:h-14" preserveAspectRatio="none">
           <path
             d="M0,60 C300,90 900,10 1200,50 L1200,80 L0,80 Z"
@@ -245,7 +245,7 @@ const AboutUs = () => {
             opacity="0.7"
           />
         </svg>
-      </div>
+      </div> */}
           </div>
         </div>
       </section>
