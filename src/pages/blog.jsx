@@ -1,8 +1,12 @@
-import React from "react";
+import React,{useEffect} from "react";
 import PageBanner from "../components/PageBanner";
 import blogBanner from "../assets/images/front-bg-image.gif";
 
 const Blog = () => {
+
+    useEffect(() => {
+      window.scrollTo(0, 0)
+    }, [])
   return (
     <>
       <PageBanner

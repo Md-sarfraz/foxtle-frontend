@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PageBanner from "@/components/PageBanner";
 import digitalBanner from "../assets/images/front-bg-image.gif";
 import degitalMarketingPerson from "../assets/images/servicePerson1.png";
@@ -11,6 +11,9 @@ import TestimonialsSection from "@/components/customer reviews";
 import FAQSection from "@/components/faqSection";
 
 const DigitalMarketing = () => {
+    useEffect(() => {
+      window.scrollTo(0, 0)
+    }, [])
   return (
     <>
       <div>

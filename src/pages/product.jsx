@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PageBanner from "../components/PageBanner";
 import productBanner from "../assets/images/front-bg-image.gif";
 import bgPatternImage from "../assets/images/bg-pattern.png";
@@ -14,6 +14,10 @@ import TestimonialsSection from "@/components/customer reviews";
 import FAQSection from "@/components/faqSection";
 
 const Product = () => {
+
+      useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
   return (
     <>
       {/* Agar PageBanner use karna ho to isko uncomment kijiye */}

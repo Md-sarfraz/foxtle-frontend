@@ -60,7 +60,7 @@ export default function FAQSection() {
         {faqData.map((item) => (
           <div
             key={item.id}
-            className={`border border-orange-200 rounded-lg overflow-hidden transition-all duration-300 ease-in-out ${
+            className={`border border-orange-200  overflow-hidden transition-all duration-300 ease-in-out ${
               openItems.has(item.id) ? "shadow-md border-orange-300" : ""
             }`}
             style={{ backgroundColor: openItems.has(item.id) ? "white" : "#FFEADD" }}

@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PageBanner from "../components/PageBanner";
 import serviceBanner from "../assets/images/front-bg-image.gif";
 
 const Service = () => {
+
+      useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
   return (
     <>
       <PageBanner

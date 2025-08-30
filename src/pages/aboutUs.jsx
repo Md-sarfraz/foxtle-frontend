@@ -1,5 +1,5 @@
 import PageBanner from "../components/PageBanner";
-import React from "react";
+import React, { useEffect } from "react";
 import aboutBanner from "../assets/images/front-bg-image.gif";
 import aboutImg1 from "../assets/images/aboutImg1.png";
 import { ArrowRight, Clipboard, Cloud, Smartphone } from "lucide-react"
@@ -33,6 +33,9 @@ const services = [
 ];
 
 const AboutUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className="">
       <>
@@ -236,8 +239,8 @@ const AboutUs = () => {
 
             </div>
 
-                  {/* Bottom Waves */}
-      {/* <div className="absolute -bottom-20 left-1/2 transform -translate-x-1/2 w-full sm:w-3/4 text-orange-500">
+            {/* Bottom Waves */}
+            {/* <div className="absolute -bottom-20 left-1/2 transform -translate-x-1/2 w-full sm:w-3/4 text-orange-500">
         <svg viewBox="0 0 1200 80" className="w-full h-10 sm:h-14" preserveAspectRatio="none">
           <path
             d="M0,60 C300,90 900,10 1200,50 L1200,80 L0,80 Z"
@@ -254,7 +257,7 @@ const AboutUs = () => {
 
       <TestimonialsSection />
       <div>
-        <FAQSection/>
+        <FAQSection />
       </div>
 
 
