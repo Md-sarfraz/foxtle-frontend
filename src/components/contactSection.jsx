@@ -92,7 +92,7 @@ const ContactSection = () => {
             <img
               src={contactImage}
               alt="Contact Support"
-              className="max-w-[180px] sm:max-w-xs mx-auto"
+              className="max-w-[180px] sm:max-w-xs mx-auto "
             />
           </div>
         </div>
