@@ -19,12 +19,17 @@ const Contact = () => {
       />
       <div className="min-h-screen  bg-white flex flex-col items-center justify-center  py-12">
 
-        <div className="flex flex-col justify-center items-center">
-          <div className="w-16 h-16 rounded-full bg-gray-500 flex justify-center items-center">
-            <img src={foxtleLogo} alt="" className="w-10 h-10" />
+        {/* Header Section */}
+        <div className="flex flex-col justify-center items-center text-center">
+          <div className="w-16 h-16 rounded-full bg-gray-200 flex justify-center items-center shadow-md">
+            <img src={foxtleLogo} alt="Foxtle Logo" className="w-10 h-10" />
           </div>
-          <p className='text-xs text-gray-400 font-bold pt-1'>Contact With Us</p>
-          <h1 className='font-semibold text-4xl text-center pb-10'>Feel Free to Write us <br /> Anytime</h1>
+          <p className="text-xs text-gray-500 font-semibold pt-2 uppercase tracking-wide">
+            Contact With Us
+          </p>
+          <h1 className="font-bold text-2xl sm:text-3xl lg:text-4xl text-gray-800 leading-snug mt-2">
+            Feel Free to Write us <br /> Anytime
+          </h1>
         </div>
         <div className="w-full h-full">
           <ContactSection />
