@@ -3,7 +3,7 @@ import PageBanner from "@/components/PageBanner";
 import webBanner from "../assets/images/front-bg-image.gif";
 import bgImg1 from "../assets/images/bgImg1.png"
 import serviceShape1 from "../assets/images/serviceShape1.png";
-import degitalMarketingPerson from "../assets/images/webdevlopmentImg1";
+import degitalMarketingPerson from "../assets/images/webdevlopmentImg1.png";
 import DigitalMarketingBenefits from "@/components/degitalMarketingBenifits";
 import DigitalMarketingServices from "@/components/degitalMarketingService";
 import ContactSection from "@/components/contactSection";
