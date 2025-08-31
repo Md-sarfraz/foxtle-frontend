@@ -21,7 +21,7 @@ const Contact = () => {
 
         {/* Header Section */}
         <div className="flex flex-col justify-center items-center text-center">
-          <div className="w-16 h-16 rounded-full bg-gray-200 flex justify-center items-center shadow-md">
+          <div className="w-16 h-16 rounded-full bg-black flex justify-center items-center shadow-md">
             <img src={foxtleLogo} alt="Foxtle Logo" className="w-10 h-10" />
           </div>
           <p className="text-xs text-gray-500 font-semibold pt-2 uppercase tracking-wide">
