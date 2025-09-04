@@ -210,18 +210,18 @@ const Navbar = () => {
             </Link>
           </div>
 
-          <Link
-            to="/contact"
-            className={`
+<Link
+  to="/contact"
+  className={`
     bg-white/10 hover:bg-white/20 text-gray-200 
-    px-2 py-1 text-xs   /* 👈 Mobile ke liye chhota */
+    px-3 py-2 text-xs   /* 👈 Mobile ke liye chhota */
     sm:px-3 sm:py-2 sm:text-sm  /* 👈 Tablet aur upar ke liye normal */
     rounded-lg font-medium transition
     ${scrolled ? "border border-white" : ""}
   `}
-          >
-            Get A Quote
-          </Link>
+>
+  Get A Quote
+</Link>
 
         </div>
 
@@ -249,8 +249,8 @@ const Navbar = () => {
                   <Link
                     to="/services/digital-marketing"
                     className={`block px-4 py-2 hover:bg-white/20 ${isActive("/services/digital-marketing")
-                      ? "border-b-2 border-white"
-                      : ""
+                        ? "border-b-2 border-white"
+                        : ""
                       }`}
                   >
                     Digital Marketing
@@ -260,8 +260,8 @@ const Navbar = () => {
                   <Link
                     to="/services/social-media"
                     className={`block px-4 py-2 hover:bg-white/20 ${isActive("/services/social-media")
-                      ? "border-b-2 border-white"
-                      : ""
+                        ? "border-b-2 border-white"
+                        : ""
                       }`}
                   >
                     Social Media Marketing
@@ -271,8 +271,8 @@ const Navbar = () => {
                   <Link
                     to="/services/web-development"
                     className={`block px-4 py-2 hover:bg-white/20 ${isActive("/services/web-development")
-                      ? "border-b-2 border-white"
-                      : ""
+                        ? "border-b-2 border-white"
+                        : ""
                       }`}
                   >
                     Web Development
@@ -342,8 +342,8 @@ const Navbar = () => {
                     <Link
                       to="/services/digital-marketing"
                       className={`block px-4 py-2 hover:bg-white/20 ${isActive("/services/digital-marketing")
-                        ? "border-b-2 border-white"
-                        : ""
+                          ? "border-b-2 border-white"
+                          : ""
                         }`}
                     >
                       Digital Marketing
@@ -353,8 +353,8 @@ const Navbar = () => {
                     <Link
                       to="/services/social-media"
                       className={`block px-4 py-2 hover:bg-white/20 ${isActive("/services/social-media")
-                        ? "border-b-2 border-white"
-                        : ""
+                          ? "border-b-2 border-white"
+                          : ""
                         }`}
                     >
                       Social Media Marketing
@@ -364,8 +364,8 @@ const Navbar = () => {
                     <Link
                       to="/services/web-development"
                       className={`block px-4 py-2 hover:bg-white/20 ${isActive("/services/web-development")
-                        ? "border-b-2 border-white"
-                        : ""
+                          ? "border-b-2 border-white"
+                          : ""
                         }`}
                     >
                       Web Development
