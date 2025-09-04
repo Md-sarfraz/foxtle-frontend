@@ -5,10 +5,10 @@ import degitalMarketingPerson from "../assets/images/servicePerson1.png";
 import bgImg1 from "../assets/images/bgImg1.png";
 import serviceShape1 from "../assets/images/serviceShape1.png";
 import DigitalMarketingServices from "@/components/degitalMarketingService";
-import ContactSection from "@/components/contactSection";
+// import ContactSection from "@/components/contactSection";
 import DigitalMarketingBenefits from "@/components/degitalMarketingBenifits";
 import TestimonialsSection from "@/components/customer reviews";
-import FAQSection from "@/components/faqSection";
+// import FAQSection from "@/components/faqSection";
 
 const DigitalMarketing = () => {
     useEffect(() => {
@@ -122,18 +122,18 @@ const DigitalMarketing = () => {
           <div>
             <DigitalMarketingServices/>
           </div>
-          <div>
+          {/* <div>
             <ContactSection/>
-          </div>
+          </div> */}
           <div>
             <DigitalMarketingBenefits/>
           </div>
           <div>
             <TestimonialsSection/>
           </div>
-          <div>
+          {/* <div>
             <FAQSection/>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

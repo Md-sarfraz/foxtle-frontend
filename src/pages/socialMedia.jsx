@@ -6,8 +6,8 @@ import degitalMarketingPerson from "../assets/images/happyBussinessmanImg.png";
 import socialBanner from "../assets/images/front-bg-image.gif";
 import DigitalMarketingBenefits from "@/components/degitalMarketingBenifits";
 import DigitalMarketingServices from "@/components/degitalMarketingService";
-import ContactSection from "@/components/contactSection";
-import FAQSection from "@/components/faqSection";
+// import ContactSection from "@/components/contactSection";
+// import FAQSection from "@/components/faqSection";
 import TestimonialsSection from "@/components/customer reviews";
 
 const SocialMedia = () => {
@@ -121,18 +121,18 @@ const SocialMedia = () => {
         <div>
           <DigitalMarketingServices />
         </div>
-        <div>
+        {/* <div>
           <ContactSection />
-        </div>
+        </div> */}
         <div>
           <DigitalMarketingBenefits />
         </div>
         <div>
           <TestimonialsSection />
         </div>
-        <div>
+        {/* <div>
           <FAQSection />
-        </div>
+        </div> */}
       </div>
     </>
   );

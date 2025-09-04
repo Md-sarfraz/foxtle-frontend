@@ -6,11 +6,11 @@ import { ArrowRight, Clipboard, Cloud, Smartphone } from "lucide-react"
 import ourProductImg1 from "../assets/images/ourProduct-img1.png"
 import ourProductImg2 from "../assets/images/ourProduct-img2.png"
 import ourProductImg3 from "../assets/images/ourProduct-img3.png"
-import ContactSection from "@/components/contactSection";
+// import ContactSection from "@/components/contactSection";
 import bgImg1 from "../assets/images/bgImg1.png"
 import personImg1 from "../assets/images/personImg1.png"
 import TestimonialsSection from "@/components/customer reviews";
-import FAQSection from "@/components/faqSection";
+// import FAQSection from "@/components/faqSection";
 
 
 const services = [
@@ -187,9 +187,9 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <>
+      {/* <>
         <ContactSection />
-      </>
+      </> */}
 
 
       <section className="relative bg-white overflow-hidden py-12 lg:py-20">
@@ -256,9 +256,9 @@ const AboutUs = () => {
 
 
       <TestimonialsSection />
-      <div>
+      {/* <div>
         <FAQSection />
-      </div>
+      </div> */}
 
 
     </div>

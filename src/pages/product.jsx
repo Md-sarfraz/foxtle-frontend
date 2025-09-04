@@ -4,14 +4,14 @@ import productBanner from "../assets/images/front-bg-image.gif";
 import bgPatternImage from "../assets/images/bg-pattern.png";
 import mobileScreen from "../assets/images/mobile-screen.png";
 import PricingSection from "@/components/priceSection";
-import ContactSection from "@/components/contactSection";
+// import ContactSection from "@/components/contactSection";
 import HowItWorks from "@/components/howItWorks";
 import logo1 from "../assets/images/logo1.png";
 import logo2 from "../assets/images/logo2.png";
 import logo3 from "../assets/images/logo3.png";
 import logo4 from "../assets/images/logo4.png";
 import TestimonialsSection from "@/components/customer reviews";
-import FAQSection from "@/components/faqSection";
+// import FAQSection from "@/components/faqSection";
 
 const Product = () => {
 
@@ -140,17 +140,17 @@ const Product = () => {
         </div>
       </main>
 
-      <div>
+      {/* <div>
         <ContactSection/>
-      </div>
+      </div> */}
 
       <div>
         <TestimonialsSection/>
       </div>
 
-      <div>
+      {/* <div>
         <FAQSection/>
-      </div>
+      </div> */}
 
 
 
